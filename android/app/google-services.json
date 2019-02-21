@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "120623381791",
+    "firebase_url": "https://amcoming-fe643.firebaseio.com",
+    "project_id": "amcoming-fe643",
+    "storage_bucket": "amcoming-fe643.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120623381791:android:23b2f8d1d0934aa2",
+        "android_client_info": {
+          "package_name": "com.amcoming"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120623381791-q9t7psb5f5aoon75d5kbh3bsj3st77pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbq1Z8VD6E1RGyyspNO0ioUWkoC6pBBGY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
