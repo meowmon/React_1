@@ -28,8 +28,8 @@ class Login extends React.Component {
 
         // Set value in store
         $store.authSetUser(resp.data);
-
-        this.props.navigation.navigate('MainScreen');
+        console.log("Login loginFacebook data response = " + JSON.stringify(resp.data))
+        this.props.navigation.navigate('MainDrawerNavigator');
     };
 
     render() {

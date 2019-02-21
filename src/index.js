@@ -1,8 +1,9 @@
 import React from 'react';
 
 import {createSwitchNavigator} from 'react-navigation';
-import MainScreen from './screens';
+import MainDrawerNavigator from './screens/MainDrawerNavigator';
 import LoginScreen from './screens/Login';
+import ChatBotsScreen from './screens/Chat/ChatBotsScreen';
 import {AsyncStorage, ActivityIndicator, View} from "react-native";
 import $store from '../src/store';
 
@@ -14,8 +15,8 @@ class LoadingScreen extends React.Component {
         if (!userData) screen = 'LoginScreen';
         else {
             const user = JSON.parse(userData);
-            $store.authSetUser({user});
-            screen = 'MainScreen';
+            $store.authSetUser(user);
+            screen = 'MainDrawerNavigator';
         }
 
         this.props.navigation.navigate(screen);
@@ -32,7 +33,8 @@ class LoadingScreen extends React.Component {
 const MainNavigator = createSwitchNavigator({
     LoadingScreen: LoadingScreen,
     LoginScreen: LoginScreen,
-    MainScreen: MainScreen,
+    MainDrawerNavigator: MainDrawerNavigator,
+    ChatScreen: ChatBotsScreen,
 }, {
     initialRouteName: 'LoadingScreen'
 });
